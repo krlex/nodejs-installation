@@ -9,7 +9,11 @@ Installation script is work:
 or with version
 
     ./script.sh 12
-    
+
 or if you want tls
-    
+
     ./script.sh tls
+
+or fast download and auto start installation
+
+     bash <(curl -sL https://raw.githubusercontent.com/krlex/nodejs-installation/main/script.sh) current
