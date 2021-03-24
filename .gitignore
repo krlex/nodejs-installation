@@ -1,0 +1,4 @@
+*.vagrant/
+*.pyc
+*.log
+Vagrantfile
