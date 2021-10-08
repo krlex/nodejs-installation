@@ -7,7 +7,7 @@ deb_nodejs_installation() {
   curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | $SUDO tee /usr/share/keyrings/yarnkey.gpg >/dev/null
   echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | $SUDO tee /etc/apt/sources.list.d/yarn.list
   $SUDO apt-get update 
-  $SUDO apt-get install -y yarn
+  $SUDO apt-get install -y yarn npm
 
 
 }
@@ -15,7 +15,7 @@ deb_nodejs_installation() {
 rpm_nodejs_installation() {
   $SUDO curl -fsSL https://rpm.nodesource.com/setup_$VER.x | $SUDO bash -
   curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | $SUDO tee /etc/yum.repos.d/yarn.repo
-  $SUDO yum -y install yarn
+  $SUDO yum -y install yarn npm
 }
 
 install_debian() {
