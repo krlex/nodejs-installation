@@ -6,9 +6,11 @@ Installation script is work:
 
     ./script.sh current
 
+and after installation only in this `current` need to install `npm`
+
 or with version
 
-    ./script.sh 12
+    ./script.sh 16 
 
 or if you want tls
 
