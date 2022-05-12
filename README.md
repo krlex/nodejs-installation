@@ -14,7 +14,7 @@ or with version
 
 or if you want tls
 
-    ./script.sh tls
+    ./script.sh lts
 
 or fast download and auto start installation
 
