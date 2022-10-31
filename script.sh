@@ -49,6 +49,14 @@ install_fedora() {
 
 }
 
+install_manjaro() {
+  $SUDO pacman -Suy 
+  $SUDO pacman -S yarn 
+  echo " Nodejs is ready for Manjaro"
+  echo " Finished Nodejs-$VER installation"
+
+}
+
 install_centos() {
   $SUDO yum update -y
   $SUDO yum install -y yum-utils curl
@@ -64,7 +72,7 @@ install_centos() {
 usage() {
   echo
   echo "Linux distribution not detected"
-  echo "Use: ID=[ubuntu|debian|centos|fedora]"
+  echo "Use: ID=[ubuntu|debian|centos|fedora|manjaro]"
   echo "Other distribution not yet supported"
   echo
 
@@ -94,6 +102,9 @@ case $ID in
         ;;
         'fedora')
                 install_fedora
+        ;;
+        'manjaro')
+                install_manjaro
         ;;
         *)
           usage
